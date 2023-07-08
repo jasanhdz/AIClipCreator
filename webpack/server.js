@@ -1,4 +1,3 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpackNodeExternals = require('webpack-node-externals')
 const { common } = require('./common')
 
@@ -19,9 +18,4 @@ module.exports = {
     },
     externals: [webpackNodeExternals()],
     ...common,
-    plugins: [
-        new CopyWebpackPlugin({
-            patterns: [{ from: 'public', to: 'public' }],
-        }),
-    ],
 }
