@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es2016",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["server/*"],
+      "@/config": ["server/config/index"],
+      "@/routes": ["server/routes/index"],
+      "app/*": ["client/*"],
+    }
+  },
+  "include": ["server/**/*.ts", "client/**/*.ts", "client/**/*.tsx"],
+}
