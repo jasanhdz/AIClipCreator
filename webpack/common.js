@@ -1,5 +1,6 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 const common = {
     resolve: {
@@ -16,6 +17,7 @@ const common = {
         path: path.resolve(__dirname, '../dist'),
     },
     plugins: [
+        new Dotenv(),
         new CopyWebpackPlugin({
             patterns: [{ from: 'public', to: 'public' }],
         }),

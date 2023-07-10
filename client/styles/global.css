@@ -6,3 +6,12 @@ body {
     margin: 0;
     background-color: #f6f6f6
 }
+
+.ellipsis-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
